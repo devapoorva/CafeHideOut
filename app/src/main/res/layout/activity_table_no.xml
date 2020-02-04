@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:theme="@style/AppTheme.NoActionBar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/background">
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        android:background="@drawable/layout_border"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+        <TextView
+            android:id="@+id/tableno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/enter_table_no"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18dp"></TextView>
+        <RelativeLayout
+            android:id="@+id/fullnamelayout"
+            android:paddingTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+            <EditText
+                android:id="@+id/edt_table"
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/xml_textbox_bg"
+                android:paddingLeft="10dp"/>
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="30dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_below="@+id/edt_table"
+                android:background="@drawable/button_shape"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white_FloralWhite"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

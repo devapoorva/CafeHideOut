@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CafeHideOut</string>
+    <string name="empty_mobile_number">Enter Mobile Number</string>
+    <string name="invalid_mobile">Enter valid mobile number</string>
+    <string name="empty_password">Enter password</string>
+    <string name="enter_table_no">Enter Table number</string>
+    <string name="next">Next</string>
+    <string name="empty_table">Enter table number</string>
+    <string name="please_wait">Please wait...</string>
+</resources>
